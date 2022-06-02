@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">NatHeroes</string>
+    <string name="txt_nama">Nama</string>
+    <string name="txt_sort">Sort</string>
+</resources>
