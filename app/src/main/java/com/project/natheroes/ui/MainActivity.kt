@@ -30,6 +30,7 @@ class MainActivity : AppCompatActivity() {
 
 
         viewModel.getHeroess()
+        viewModel.getHeroesGirls()
 
         viewModel.isLoading.observe(this) { showLoading(it) }
         viewModel.isError.observe(this) { showError(it) }
