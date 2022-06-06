@@ -23,6 +23,8 @@
         android:layout_marginHorizontal="16dp"
         android:background="@drawable/search_view"
         android:iconifiedByDefault="false"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
         android:queryBackground="@android:color/transparent"
         android:queryHint="Search Heroes"
         app:layout_constraintEnd_toEndOf="parent"
@@ -32,13 +34,12 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_main"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:padding="16dp"
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edt_search"
-
         tools:listitem="@layout/row_item_heroes" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,8 +3,8 @@ package com.project.natheroes.ui.detail
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
-import com.project.HeroesResponse
 import com.project.natheroes.databinding.ActivityDetailBinding
+import com.project.natheroes.response.HeroesResponse
 
 class DetailActivity : AppCompatActivity() {
 
@@ -22,13 +22,12 @@ class DetailActivity : AppCompatActivity() {
             binding.apply {
                 Glide.with(this@DetailActivity).load(data.imageUrl).into(detailImage)
                 detailNama.text = data.name
-                detailUsia.text = "Di Tahun : " + data.birthYear
+                detailUsia.text = "Di Tahun : " + data.birthYear + "Lahirnya"
                 detailMati.text = "Wafat : " + data.deathYear
                 detailDesk.text = data.description
                 detailAscensions.text = "Tahun Kenaikan : " + data.ascensionYear
             }
         }
-
     }
 
     companion object {

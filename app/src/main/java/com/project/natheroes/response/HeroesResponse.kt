@@ -1,4 +1,4 @@
-package com.project
+package com.project.natheroes.response
 
 import android.os.Parcelable
 import com.google.gson.annotations.SerializedName

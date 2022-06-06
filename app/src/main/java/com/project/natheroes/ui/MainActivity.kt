@@ -7,9 +7,9 @@ import android.view.Menu
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
-import com.project.HeroesResponse
 import com.project.natheroes.R
 import com.project.natheroes.databinding.ActivityMainBinding
+import com.project.natheroes.response.HeroesResponse
 import com.project.natheroes.ui.detail.DetailActivity
 
 
@@ -18,6 +18,9 @@ class MainActivity : AppCompatActivity() {
     private var _binding: ActivityMainBinding? = null
     private val binding get() = _binding as ActivityMainBinding
 
+    val viewModel: MainViewModel by lazy {
+        ViewModelProvider(this).get(MainViewModel::class.java)
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,7 +28,6 @@ class MainActivity : AppCompatActivity() {
         _binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
 
         viewModel.getHeroess()
 
@@ -70,6 +72,4 @@ class MainActivity : AppCompatActivity() {
         menuInflater.inflate(R.menu.menu_home, menu)
         return super.onCreateOptionsMenu(menu)
     }
-
-
 }

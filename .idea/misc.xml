@@ -6,6 +6,8 @@
         <entry key="app/src/main/res/drawable/search_view.xml" value="0.1205" />
         <entry key="app/src/main/res/layout/activity_detail.xml" value="0.14617462158203126" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2328125" />
+        <entry key="app/src/main/res/layout/fragment_heroes_girls.xml" value="0.21875" />
+        <entry key="app/src/main/res/layout/fragment_pahlawan_indo.xml" value="0.2328125" />
         <entry key="app/src/main/res/layout/row_item_heroes.xml" value="0.2328125" />
         <entry key="app/src/main/res/layout/row_item_kisah.xml" value="0.7698377910413241" />
         <entry key="app/src/main/res/menu/menu_home.xml" value="0.2328125" />

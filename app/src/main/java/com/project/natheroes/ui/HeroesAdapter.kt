@@ -6,8 +6,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.bumptech.glide.request.RequestOptions
-import com.project.HeroesResponse
 import com.project.natheroes.databinding.RowItemHeroesBinding
+import com.project.natheroes.response.HeroesResponse
 
 class HeroesAdapter : RecyclerView.Adapter<HeroesAdapter.MyViewHolder>() {
 
@@ -37,7 +37,7 @@ class HeroesAdapter : RecyclerView.Adapter<HeroesAdapter.MyViewHolder>() {
         holder.binding.apply {
             itemName.text = data.name
             Glide.with(itemImg.context)
-                .load(itemImg)
+                .load(data.imageUrl)
                 .apply(RequestOptions())
                 .override(500, 500)
                 .diskCacheStrategy(DiskCacheStrategy.ALL)

@@ -2,4 +2,6 @@
     <string name="app_name">NatHeroes</string>
     <string name="txt_nama">Nama</string>
     <string name="txt_sort">Sort</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
