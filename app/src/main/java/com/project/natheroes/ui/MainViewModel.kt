@@ -15,7 +15,7 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     var isError = MutableLiveData<Throwable>()
 
     var sejarahHeroes = MutableLiveData<ArrayList<HeroesResponse>>()
-    var HeroesGirls = MutableLiveData<ArrayList<HeroesGirlsResponse>>()
+    var heroesGirls = MutableLiveData<ArrayList<HeroesGirlsResponse>>()
 
     fun getData(
         responHandler: (ArrayList<HeroesResponse>) -> Unit,
@@ -60,7 +60,7 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
         getHeroesGirls({
             isLoading.value = false
             it.drop(57)
-            HeroesGirls.value = it
+            heroesGirls.value = it
         }, {
             isLoading.value = false
             isError.value = it

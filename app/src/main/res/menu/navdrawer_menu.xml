@@ -6,7 +6,7 @@
         android:title="Pahlawan" />
 
     <item
-        android:id="@+id/heroesGirlFragment"
+        android:id="@+id/heroesGirlsFragment"
         android:title="Pahlawan perempuan" />
 
 

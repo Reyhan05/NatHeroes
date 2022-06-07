@@ -22,15 +22,15 @@ class HeroesGirlsAdapter : RecyclerView.Adapter<HeroesGirlsAdapter.MyViewHolder>
 
     private var onItemClickCallback: OnItemClickCallback? = null
 
-    /*fun setOnItemClickCallback(onItemClickCallback: OnItemClickCallback) {
+    fun setOnItemClickCallback(onItemClickCallback: OnItemClickCallback) {
         this.onItemClickCallback = onItemClickCallback
-    }*/
+    }
 
     class MyViewHolder(val binding: RowItemHeroesGirlsBinding) :
         RecyclerView.ViewHolder(binding.root)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) =
-        HeroesGirlsAdapter.MyViewHolder(
+        MyViewHolder(
             RowItemHeroesGirlsBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         )
 

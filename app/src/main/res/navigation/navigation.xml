@@ -3,21 +3,34 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
-    app:startDestination="@id/pahlawanIndoFragment">
+    app:startDestination="@id/heroesFragment">
 
-    <fragment
-        android:id="@+id/pahlawanIndoFragment"
-        android:name="com.project.natheroes.fragment.PahlawanIndoFragment"
-        android:label="Heroes"
-        tools:layout="@layout/fragment_pahlawan_indo"/>
+    <activity
+        android:id="@+id/detailActivity"
+        android:name="com.project.natheroes.ui.detail.DetailActivity"
+        android:label="activity_detail"
+        tools:layout="@layout/activity_detail" />
+    <activity
+        android:id="@+id/detailGirls"
+        android:name="com.project.natheroes.ui.detail.DetailGirls"
+        android:label="activity_detail_girls"
+        tools:layout="@layout/activity_detail_girls" />
     <fragment
         android:id="@+id/heroesGirlsFragment"
-        android:name="com.project.natheroes.fragment.HeroesGirlsFragment"
+        android:name="com.project.natheroes.ui.HeroesGirls.HeroesGirlsFragment"
         android:label="fragment_heroesGirl"
-        tools:layout="@layout/fragment_heroes_girls"/>
-    <activity
-        android:id="@+id/mainActivity"
-        android:name="com.project.natheroes.ui.MainActivity"
-        android:label="activity_main"
-        tools:layout="@layout/activity_main" />
+        tools:layout="@layout/fragment_heroes_girls">
+        <action
+            android:id="@+id/action_heroesGirlsFragment_to_detailGirls"
+            app:destination="@id/detailGirls" />
+    </fragment>
+    <fragment
+        android:id="@+id/heroesFragment"
+        android:name="com.project.natheroes.ui.heroes.HeroesFragment"
+        android:label="HeroesFragment"
+        tools:layout="@layout/fragment_heroes">
+        <action
+            android:id="@+id/action_heroesFragment2_to_detailActivity"
+            app:destination="@id/detailActivity" />
+    </fragment>
 </navigation>

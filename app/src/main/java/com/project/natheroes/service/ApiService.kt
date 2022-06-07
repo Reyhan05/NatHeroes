@@ -10,6 +10,6 @@ interface ApiService {
     @GET("heroes")
     fun getHeroes(): Flowable<ArrayList<HeroesResponse>>
 
-    @GET("heroes_girls")
+    @GET("heroes_girl")
     fun getHeroesGirls(): Flowable<ArrayList<HeroesGirlsResponse>>
 }
