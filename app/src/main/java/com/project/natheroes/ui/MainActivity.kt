@@ -3,7 +3,6 @@ package com.project.natheroes.ui
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import android.view.Menu
 import androidx.appcompat.app.AppCompatActivity
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.lifecycle.ViewModelProvider
@@ -98,10 +97,5 @@ class MainActivity : AppCompatActivity() {
         } else {
             binding.progressMain.visibility = android.view.View.INVISIBLE
         }
-    }
-
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.menu_home, menu)
-        return super.onCreateOptionsMenu(menu)
     }
 }

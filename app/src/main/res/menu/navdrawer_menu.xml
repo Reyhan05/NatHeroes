@@ -3,11 +3,11 @@
 
     <item
         android:id="@+id/heroesFragment"
-        android:title="Heroes"/>
+        android:title="Pahlawan" />
 
     <item
         android:id="@+id/heroesGirlFragment"
-        android:title="Girl Heroes"/>
+        android:title="Pahlawan perempuan" />
 
 
 </menu>
