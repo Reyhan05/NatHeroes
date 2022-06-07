@@ -8,11 +8,13 @@
     <fragment
         android:id="@+id/pahlawanIndoFragment"
         android:name="com.project.natheroes.fragment.PahlawanIndoFragment"
-        android:label="fragment_heroes" />
+        android:label="Heroes"
+        tools:layout="@layout/fragment_pahlawan_indo"/>
     <fragment
         android:id="@+id/heroesGirlsFragment"
         android:name="com.project.natheroes.fragment.HeroesGirlsFragment"
-        android:label="fragment_heroesGirl" />
+        android:label="fragment_heroesGirl"
+        tools:layout="@layout/fragment_heroes_girls"/>
     <activity
         android:id="@+id/mainActivity"
         android:name="com.project.natheroes.ui.MainActivity"
