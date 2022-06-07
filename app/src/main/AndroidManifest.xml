@@ -11,6 +11,9 @@
         android:theme="@style/Theme.NatHeroes"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".ui.detail.DetailGirls"
+            android:exported="false" />
+        <activity
             android:name=".ui.detail.DetailActivity"
             android:exported="false" />
         <activity
@@ -24,6 +27,6 @@
         </activity>
     </application>
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

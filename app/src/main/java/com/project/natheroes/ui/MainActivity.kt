@@ -11,9 +11,12 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
 import androidx.recyclerview.widget.GridLayoutManager
 import com.project.natheroes.R
+import com.project.natheroes.adapter.HeroesAdapter
 import com.project.natheroes.databinding.ActivityMainBinding
+import com.project.natheroes.response.HeroesGirlsResponse
 import com.project.natheroes.response.HeroesResponse
 import com.project.natheroes.ui.detail.DetailActivity
+import com.project.natheroes.ui.detail.DetailGirls
 
 
 class MainActivity : AppCompatActivity() {
@@ -22,9 +25,7 @@ class MainActivity : AppCompatActivity() {
     private val binding get() = _binding as ActivityMainBinding
 
     private lateinit var drawerLayout: DrawerLayout
-
-
-    val viewModel: MainViewModel by lazy {
+    private val viewModel: MainViewModel by lazy {
         ViewModelProvider(this).get(MainViewModel::class.java)
     }
 
@@ -37,10 +38,10 @@ class MainActivity : AppCompatActivity() {
         drawerLayout = binding.drawerLayout
         val navController = this.findNavController(R.id.myNavHostFragment)
         NavigationUI.setupActionBarWithNavController(this, navController, drawerLayout)
-        navController.addOnDestinationChangedListener{ controller, destination, _ ->
-            if (destination.id == controller.graph.startDestinationId){
+        navController.addOnDestinationChangedListener { controller, destination, _ ->
+            if (destination.id == controller.graph.startDestinationId) {
                 drawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED)
-            }else{
+            } else {
                 drawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED)
             }
 
@@ -73,6 +74,13 @@ class MainActivity : AppCompatActivity() {
                 override fun onItemClicked(data: HeroesResponse) {
                     startActivity(
                         Intent(this@MainActivity, DetailActivity::class.java)
+                            .putExtra(DetailActivity.EXTRA_DATA, data)
+                    )
+                }
+
+                override fun onItemClicked(data: HeroesGirlsResponse) {
+                    startActivity(
+                        Intent(this@MainActivity, DetailGirls::class.java)
                             .putExtra(DetailActivity.EXTRA_DATA, data)
                     )
                 }
