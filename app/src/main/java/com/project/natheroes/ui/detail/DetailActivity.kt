@@ -22,7 +22,7 @@ class DetailActivity : AppCompatActivity() {
             binding.apply {
                 Glide.with(this@DetailActivity).load(data.imageUrl).into(detailImage)
                 detailNama.text = data.name
-                detailUsia.text = "Di Tahun : " + data.birthYear + "Lahirnya"
+                detailUsia.text = "Di Tahun : " + data.birthYear + " Lahirnya"
                 detailMati.text = "Wafat : " + data.deathYear
                 detailDesk.text = data.description
                 detailAscensions.text = "Tahun Kenaikan : " + data.ascensionYear

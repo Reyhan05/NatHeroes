@@ -3,7 +3,7 @@
 
     <item
         android:id="@+id/heroesFragment"
-        android:title="Pahlawan" />
+        android:title="Pahlawan Pria" />
 
     <item
         android:id="@+id/heroesGirlsFragment"
