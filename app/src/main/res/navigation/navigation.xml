@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/pahlawanIndoFragment">
+
+    <fragment
+        android:id="@+id/pahlawanIndoFragment"
+        android:name="com.project.natheroes.fragment.PahlawanIndoFragment"
+        android:label="fragment_heroes" />
+    <fragment
+        android:id="@+id/heroesGirlsFragment"
+        android:name="com.project.natheroes.fragment.HeroesGirlsFragment"
+        android:label="fragment_heroesGirl" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.project.natheroes.ui.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+</navigation>

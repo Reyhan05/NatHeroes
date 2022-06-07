@@ -3,11 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/radif/AndroidStudioProjects/NatHeroes/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/radif/AndroidStudioProjects/NatHeroes/app/src/main/res/layout/fragment_heroes_girls.xml" value="0.22291666666666668" />
+        <entry key="..\:/Users/radif/AndroidStudioProjects/NatHeroes/app/src/main/res/layout/fragment_pahlawan_indo.xml" value="0.22291666666666668" />
+        <entry key="..\:/Users/radif/AndroidStudioProjects/NatHeroes/app/src/main/res/layout/nav_header.xml" value="0.22291666666666668" />
+        <entry key="..\:/Users/radif/AndroidStudioProjects/NatHeroes/app/src/main/res/layout/row_item_heroes.xml" value="0.22291666666666668" />
+        <entry key="..\:/Users/radif/AndroidStudioProjects/NatHeroes/app/src/main/res/menu/navdrawer_menu.xml" value="0.22291666666666668" />
         <entry key="app/src/main/res/drawable/search_view.xml" value="0.1205" />
         <entry key="app/src/main/res/layout/activity_detail.xml" value="0.14617462158203126" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2328125" />
-        <entry key="app/src/main/res/layout/fragment_heroes_girls.xml" value="0.21875" />
-        <entry key="app/src/main/res/layout/fragment_pahlawan_indo.xml" value="0.2328125" />
         <entry key="app/src/main/res/layout/row_item_heroes.xml" value="0.2328125" />
         <entry key="app/src/main/res/layout/row_item_kisah.xml" value="0.7698377910413241" />
         <entry key="app/src/main/res/menu/menu_home.xml" value="0.2328125" />

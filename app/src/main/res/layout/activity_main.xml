@@ -6,6 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".ui.MainActivity">
 
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
     <ProgressBar
         android:id="@+id/progress_main"
         android:layout_width="wrap_content"
@@ -16,30 +21,31 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <SearchView
-        android:id="@+id/edt_search"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="16dp"
-        android:background="@drawable/search_view"
-        android:iconifiedByDefault="false"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
-        android:queryBackground="@android:color/transparent"
-        android:queryHint="Search Heroes"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+
+        <fragment
+            android:id="@+id/myNavHostFragment"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/navigation" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
         android:padding="16dp"
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edt_search"
+        app:layout_constraintTop_toTopOf="parent"
         tools:listitem="@layout/row_item_heroes" />
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:menu="@menu/navdrawer_menu" />
+    </androidx.drawerlayout.widget.DrawerLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
