@@ -1,4 +1,4 @@
-package com.project.natheroes.ui.detail
+package com.project.natheroes.detail
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
